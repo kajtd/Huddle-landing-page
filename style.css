@@ -16,6 +16,8 @@
     background-image: url("images/bg-mobile.svg");
     background-repeat: no-repeat;
     min-height: 100vh;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .container {
@@ -61,6 +63,7 @@
     letter-spacing: .6px;
     line-height: 22px;
     font-weight: 200;
+    opacity: 0.8;
 }
 
 .info__btn {
@@ -129,7 +132,7 @@
     }
     .container {
         flex-direction: row;
-        padding: 0;
+        padding: 0 auto;
     }
 
     .logo {
@@ -160,9 +163,8 @@
     }
 
     .social {
-        position: absolute;
-        bottom: 5%;
-        right: 5%;
+        align-self: flex-end;
+        margin: 0 4%;
     }
 
     .social__icon {
@@ -171,3 +173,4 @@
         border-width: 1.5px;
     }
 }
+
